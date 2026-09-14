@@ -1,48 +1,47 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
-
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
+# Core do WordPress (Geralmente gerenciado por atualizações automáticas ou Composer)
 /wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
 /wp-includes/
 /index.php
 /license.txt
 /readme.html
 /wp-*.php
-/xmlrpc.php
+!/wp-config-sample.php
 
-# Configuration
+# Configurações sensíveis (NUNCA envie as credenciais do banco de dados ao GitHub)
 wp-config.php
+.env
 
-# Example themes
+# Conteúdo padrão do WordPress e Temas padrão
+/wp-content/index.php
+/wp-content/languages/
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
 /wp-content/themes/twenty*/
 
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
+# Mídias e Uploads do WooCommerce (Imagens de produtos e PDFs gerados acumulam GBs no Git)
 /wp-content/uploads/
+/wp-content/blogs.dir/
+/wp-content/upgrade/
 
-# Log files
+# Arquivos gerados pelo WooCommerce e Plugins de Cache
+/wp-content/cache/
+/wp-content/wphb-cache/
+/wp-content/uploads/wc-logs/
+/wp-content/uploads/woocommerce_uploads/
 *.log
 
-# htaccess
-/.htaccess
+# Arquivos de Sistema e IDEs
+.DS_Store
+.DS_Store?
+._*
+.Thumbs.db
+ehthumbs.db
+.Desktop
+.vsco/
+.idea/
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Dependências de Desenvolvimento (caso use automação no tema/plugins)
+node_modules/
+/vendor/
+npm-debug.log
+yarn-error.log
