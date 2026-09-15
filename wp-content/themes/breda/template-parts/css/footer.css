@@ -1,0 +1,38 @@
+footer{
+    /* background-color: pink; */
+    padding: 40px 0;
+}
+.section_logo_topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+.div_logo_footer{
+    width: 100%;
+    max-width: 300px;
+}
+.div_logo_footer img{
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+.section_navegacao_footer{
+    padding: 40px 0;
+}
+.titulo_footer{    
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#menu-principal-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#menu-principal-footer a{
+    color: var(--preto-1);
+    font-size: 12px;
+}

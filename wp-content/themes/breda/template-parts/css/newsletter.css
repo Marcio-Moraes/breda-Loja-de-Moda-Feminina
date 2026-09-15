@@ -1,0 +1,16 @@
+.section_newsletter{
+    background-color: var(--cinza-1);
+    padding: 40px 0;
+}
+.section_newsletter .caixa{ 
+    flex-direction: column;
+}
+
+.titulo_newsletter{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descricao_newsletter{
+    margin-bottom: 20px;
+}

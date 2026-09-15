@@ -1,0 +1,27 @@
+:root {
+    --amarelo-1: #ffb636;
+    --amarelo-2: #ff9800;
+    --preto-1: #000;
+    --preto-2: #333;
+    --branco-1: #fff;
+    --cinza-1: #F1F1F1;
+}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    font-weight: normal;
+    list-style: none;
+    text-decoration: none;
+}
+.caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
